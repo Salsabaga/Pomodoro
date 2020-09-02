@@ -4,15 +4,31 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Pomodoro For You</title>
+
+		<!-- Wesbite Styles -->
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="styles.css" />
+
+		<!-- Website Fonts  -->
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<h1>Welcome! Let's start your task today</h1>
+		<h1 class="title">Welcome! Let's start your task today</h1>
 		<div class="timers">
-			<h4 id="countdown">25:00</h4>
+			<h4 id="countdown">Ready?</h4>
 		</div>
 		<div>
-			<button type="submit">Start</button>
+			<button id="start" type="submit" onclick="timerStart();">Start</button>
+			<button id="reset" type="submit" onclick="timerReset();">Reset</button>
+			<button type="submit" onclick="timerStop();">Stop</button>
 		</div>
 		<script src="clock.js"></script>
 	</body>
