@@ -6,11 +6,13 @@
 		<title>Pomodoro For You</title>
 
 		<!-- Wesbite Styles -->
-
 		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
 			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
 		/>
+
 		<link rel="stylesheet" href="styles.css" />
 
 		<!-- Website Fonts  -->
@@ -19,16 +21,40 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<h1 class="title">Welcome! Let's start your task today</h1>
+		<h1 id="title">Welcome! Let's start your for task today</h1>
 		<div class="timers">
 			<h4 id="countdown">Ready?</h4>
 		</div>
-		<div>
-			<button id="start" type="submit" onclick="timerStart();">Start</button>
-			<button id="reset" type="submit" onclick="timerReset();">Reset</button>
-			<button type="submit" onclick="timerStop();">Stop</button>
+		<div class="buttons">
+			<button
+				class="btn btn-outline-light btn-lg"
+				id="start"
+				type="submit"
+				onclick="timerStart();"
+			>
+				Start
+			</button>
+			<button
+				class="btn btn-outline-light btn-lg"
+				id="reset"
+				type="submit"
+				onclick="timerReset();"
+			>
+				Reset
+			</button>
+			<button
+				class="btn btn-outline-light btn-lg"
+				type="submit"
+				onclick="timerStop();"
+			>
+				Stop
+			</button>
 		</div>
 		<script src="clock.js"></script>
 	</body>
